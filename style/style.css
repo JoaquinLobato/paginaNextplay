@@ -10,8 +10,10 @@ body{
     background-color: rgb(246, 238, 226);
 }
 header{
-    background-color: rgb(14, 147, 14);
+    background-color: rgb(5, 59, 5);
+    padding: 10px;
 
+    
 }
 h1{
     font-family: 'Merriweather', serif;
@@ -22,22 +24,23 @@ h1{
 }
 ul li{
     font-family: 'Merriweather', serif;
-    font-size: 20px;
-    list-style-type: none;
-    display: inline-block;
-    
+    font-size: 25px;
+
     }
 a{
     text-decoration: none;
-    color: rgb(51, 50, 50);
+    color: rgba(129,128,134,255);
 
 }
 
 footer{
-    background-color: rgb(14, 147, 14) ;
+    background-color: rgb(4, 46, 4) ;
+    height: 20vh;
+    
 }
 div{
     font-family: 'Fira Sans', sans-serif;
+    font-size: 2.5vh;
 }
 h2{
     margin: 20px 0px 20px 0px;
@@ -54,4 +57,45 @@ iframe{
 .images{
     margin: 30px 0px 30px 20px;
     border: 3px black;
+}
+nav{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.logo{
+    display: inline-block;
+    height: 70px;
+    width: 200px;
+}
+.list_nav{
+    display: flex;
+    list-style: none;
+
+}
+.botones_nav{
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px; 
+    font-weight: bold;
+}
+.footer_grid{
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 50% 50%;
+    align-items: center;
+}
+.div_footer_izq{
+    margin-left: 10px;
+}
+.productos_grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 400px 50px 300px 400px 50px 300px;
+    grid-gap: 10px;
+    justify-items: center;
+}
+.titulos_productos{
+    align-self: center;
+    justify-content: center;
 }
