@@ -5,31 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <title>Nextplay</title>
 </head>
 <body>
     
     <header>
-        <nav>
-            <img src="./images/logoNextplay.png" class="logo">
-                <ul class="list_nav">
-                    <li class="botones_nav">
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li class="botones_nav">
-                        <a href="./sections/productos.html">Productos</a>
-                    </li>
-                    <li class="botones_nav">
-                        <a href="./sections/servicios.html">Servicios</a>
-                    </li>
-                    <li class="botones_nav">
-                        <a href="./sections/sobreNosotros.htm">Sobre</a>
-                    </li>
-                    <li class="botones_nav">
-                        <a href="./sections/contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
+      <nav class="navbar navbar-expand-lg navBack">
+        <div class="container-fluid">
+          <img src="./images/logoNextplay.png" alt="Logo de la empresa Nextplay" class="logo">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./sections/productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./sections/servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./sections/sobreNosotros.htm">Sobre Nos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./sections/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
         </header>
         <section>
             
@@ -60,5 +68,6 @@
                 <a href="">link a mercadolibre de la empresa</a>
             </div>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>

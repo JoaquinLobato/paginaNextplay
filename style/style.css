@@ -12,7 +12,7 @@ body{
 header{
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,0.83) 0%, rgba(2,74,5,1) 4%, rgba(2,74,5,1) 96%, rgba(0,0,0,0.83) 100%);
-    padding: 10px;
+   
 
     
 }
@@ -103,4 +103,18 @@ nav{
 }
 a:hover{
     color: rgb(254, 255, 255);
+}
+.navBack{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.83) 0%, rgba(2,74,5,1) 4%, rgba(2,74,5,1) 96%, rgba(0,0,0,0.83) 100%); 
+}
+#navbarNav{
+    flex-direction: row-reverse;
+
+}
+.navbar-nav{
+    align-items: flex-end;
+}
+.botones{
+    color: black;
 }
