@@ -1,0 +1,45 @@
+nav{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+} 
+.logo{
+    display: inline-block;
+    height: 85px;
+    width: 230px;
+}
+
+.list_nav{
+    display: flex;
+    list-style: none;
+
+}
+
+.botones_nav{
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px; 
+    font-weight: bold;
+} 
+.navBack{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,0.83) 0%, rgba(2,74,5,1) 4%, rgba(2,74,5,1) 96%, rgba(0,0,0,0.83) 100%); 
+}
+
+#navbarNav{
+    flex-direction: row-reverse;
+
+}
+
+.navbar-nav{
+    align-items: flex-end;
+}
+.nav-link:hover{
+    color: antiquewhite;
+
+}
+
+.nav-item{
+    margin-left: 1vh;
+    margin-right: 1vh;
+}

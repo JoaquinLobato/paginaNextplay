@@ -1,5 +1,8 @@
 
 @import "fonts";
+@import "nav";
+
+$link-color: rgba(129,128,134,255);
 
 *{
     margin: 0px;
@@ -69,30 +72,9 @@ iframe{
     border: 3px black;
 }
 
-nav{
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-}
 
-.logo{
-    display: inline-block;
-    height: 85px;
-    width: 230px;
-}
 
-.list_nav{
-    display: flex;
-    list-style: none;
 
-}
-
-.botones_nav{
-    display: inline-block;
-    margin-top: 12px;
-    padding: 10px; 
-    font-weight: bold;
-}
 
 .footer_grid{
     display: grid;
@@ -122,19 +104,7 @@ a:hover{
     color: rgb(254, 255, 255) !important;
 }
 
-.navBack{
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,0.83) 0%, rgba(2,74,5,1) 4%, rgba(2,74,5,1) 96%, rgba(0,0,0,0.83) 100%); 
-}
 
-#navbarNav{
-    flex-direction: row-reverse;
-
-}
-
-.navbar-nav{
-    align-items: flex-end;
-}
 
 .botones{
     color: black;
@@ -142,24 +112,16 @@ a:hover{
 
 a{
     text-decoration: none;
-    color: rgba(129,128,134,255);
+    color: $link-color;
 
 }
 .link_footer {
     text-decoration: none;
-    color: rgba(129,128,134,255);
+    color: $link-color;
 
 }
 
-.nav-link:hover{
-    color: antiquewhite;
 
-}
-
-.nav-item{
-    margin-left: 1vh;
-    margin-right: 1vh;
-}
 
 h5{
     font-family: 'Merriweather', serif;
