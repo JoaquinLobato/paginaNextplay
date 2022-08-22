@@ -1,0 +1,33 @@
+$link-color: rgba(129,128,134,255);
+.footer_grid{
+    display: grid;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 50% 50%;
+    align-items: center;
+}
+
+.div_footer_izq{
+    margin-left: 10px;
+}
+
+footer{
+    @extend .navBack;
+    height: 20vh;
+    
+}
+
+.link_footer {
+    text-decoration: none;
+    color: $link-color;
+} 
+
+.footer_div{
+    font-size: 1.4vw;
+}
+
+@media (max-width: 767px){
+    .footer_div{
+        font-size: 2vw;;
+
+    } 
+}

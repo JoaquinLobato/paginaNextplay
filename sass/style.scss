@@ -1,24 +1,28 @@
 
 @import "fonts";
 @import "nav";
+@import "footer";
+@import "form";
 
 $link-color: rgba(129,128,134,255);
-
+$estilos:(
+    pad: 10px;
+    mT: 10px;
+    mB: 10px;
+    justi: justified;
+)
 *{
     margin: 0px;
     padding: 0px;
 }
 
-body{
-    background-color: rgb(246, 238, 226);
+@mixin marg-pad{
+    padding: 20px;
+   margin: 10px 10px 10px 10px;
 }
 
-header{
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,0.83) 0%, rgba(2,74,5,1) 4%, rgba(2,74,5,1) 96%, rgba(0,0,0,0.83) 100%);
-   
-
-    
+body{
+    background-color: rgb(246, 238, 226);
 }
 
 h1{
@@ -35,15 +39,6 @@ ul li{
 
     }
 
-
-
-footer{
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,0.83) 0%, rgba(2,74,5,1) 4%, rgba(2,74,5,1) 96%, rgba(0,0,0,0.83) 100%);
-    height: 20vh;
-    
-}
-
 div{
     font-family: 'Inter', sans-serif;
     font-size: 3vh;
@@ -59,8 +54,12 @@ h2{
 
 p{
     font-family: 'Inter', sans-serif;
-    text-align: justify;
-    margin: 10px 0px 10px 6px;
+    text-align: map-get($estilos, justi);
+    margin-top: map-get($estilos, mT);
+    margin-bottom: map-get($estilos, mB);
+    padding: map-get($estilos, pad);
+    
+
 }
 
 iframe{
@@ -72,29 +71,6 @@ iframe{
     border: 3px black;
 }
 
-
-
-
-
-.footer_grid{
-    display: grid;
-    grid-template-columns: 50% 25% 25%;
-    grid-template-rows: 50% 50%;
-    align-items: center;
-}
-
-.div_footer_izq{
-    margin-left: 10px;
-}
-
-.productos_grid{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 400px 50px 300px 400px 50px 300px;
-    grid-gap: 10px;
-    justify-items: center;
-}
-
 .titulos_productos{
     align-self: center;
     justify-content: center;
@@ -103,8 +79,6 @@ iframe{
 a:hover{
     color: rgb(254, 255, 255) !important;
 }
-
-
 
 .botones{
     color: black;
@@ -115,13 +89,6 @@ a{
     color: $link-color;
 
 }
-.link_footer {
-    text-decoration: none;
-    color: $link-color;
-
-}
-
-
 
 h5{
     font-family: 'Merriweather', serif;
@@ -131,17 +98,7 @@ h5{
     margin-top: 4vh !important;
 }
 
-label{
-    font-family: 'Inter', sans-serif;
-    font-size: 1.5vw;
-    text-decoration: underline;
-    margin-left: 10px;
-}
-
-.form{
-    display: grid;
-   grid-template-columns: 2fr 6fr;
-   grid-template-rows: 4fr 4fr 4fr 4fr;
-   align-items: baseline;
-   gap: 5px;
-}
+.linea-monitores-img{
+    width: 100%;
+  height: auto;
+ }
