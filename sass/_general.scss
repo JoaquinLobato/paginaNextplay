@@ -1,0 +1,134 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+$link-color: rgba(129,128,134,255);
+$topHeadings850: 3vh;
+
+$estilos:(
+    pad: 8px,
+    mT: 10px,
+    mB: 10px,
+    justi: justified,
+);
+
+@mixin marg-pad{
+    padding: 20px;
+   margin: 10px 10px 10px 10px;
+}
+
+body{
+    background-color: rgb(246, 238, 226);
+}
+
+h1{
+    font-family: 'Merriweather', serif;
+    font-size: 30px;
+    color: rgb(4, 46, 4);
+
+
+}
+
+ul li{
+    font-family: 'Merriweather', serif;
+    font-size: 25px;
+
+    }
+
+div{
+    font-family: 'Inter', sans-serif;
+   
+}
+
+h2{
+    margin-top: 4vh !important;
+    margin-bottom: 4vh !important;
+    text-align: center;
+    font-size: 4vw !important;
+    font-family: 'Merriweather', serif;
+}
+
+p{
+    font-family: 'Inter', sans-serif;
+    text-align: map-get($estilos, justi) !important;
+    margin-top: map-get($estilos, mT) !important;
+    margin-bottom: map-get($estilos, mB) !important;
+    padding: map-get($estilos, pad) !important;
+    font-size: 1.5vw;
+
+}
+
+a{
+    text-decoration: none;
+    color: $link-color;
+
+}
+
+h3{
+    font-family:'Merriweather', serif; 
+    font-size: 3vw;
+    text-align: center;
+    margin-bottom: 4vh ;
+    margin-top: 4vh;
+}
+
+a:hover{
+    color: rgb(254, 255, 255) !important;
+}
+
+.botones{
+    color: black;
+}
+
+.titulos_productos{
+    align-self: center;
+    justify-content: center;
+}
+
+@media (max-width: 850px){
+    h2{
+        font-size: 5vw;
+        margin-top: $topHeadings850;
+        margin-bottom: 3vh;
+    }
+    p{
+        font-size: 2vw;
+    }
+}
+
+
+@media (max-width: 1200px){
+    h2{
+        font-size: 6vw;
+        margin-top: 6vh;
+        margin-bottom: 6vh;
+    }
+    .imgagenes_muestras{
+        width: 97%;
+        height: auto; 
+     }
+    
+}
+
+
+h4{
+    font-family: 'Merriweather, serif';
+    margin-left: 10px;
+    font-size: 2.5vw !important;
+}
+
+.imgagenes_muestras{
+    width: 100%;
+    height: auto;
+    max-inline-size: 100%;
+    block-size: auto;
+ }
+
+
+.home_info{
+    padding: 0.5vw;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+}
+

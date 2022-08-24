@@ -42,4 +42,19 @@ nav{
 .nav-item{
     margin-left: 1vh;
     margin-right: 1vh;
+    font-size: 2vw !important;
+}
+
+@media (max-width: 767px){
+    .logo{
+        width: 155px;
+        height: 50px
+    }
+}
+
+@media (max-width: 1050px){
+    .logo{
+        width: 175px;
+        height: 70px
+    }
 }

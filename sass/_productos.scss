@@ -1,0 +1,21 @@
+.card-text{
+    font-size: 1.5vw;
+}
+
+.img_productos{
+    width: 100%;
+    height: auto;
+   
+}
+
+.carousel-control-prev{
+    left: -3.5vw !important;
+}
+
+.carousel-control-next {
+    right: -3.5vw !important;
+}
+
+.card{
+    --bs-card-border-width: 0px !important;
+}
